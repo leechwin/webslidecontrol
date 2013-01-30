@@ -10,10 +10,13 @@ Web slide control from anywhere else.
  - {node server}/index.html
  - Control the slide move
 
+
+
 * WebSlide
  - Control slide
- - Prerequired list
-   - jquery.js
-   - webslidecontrol.js
+ - Prerequired
+   -- jquery.js
+   -- webslidecontrol.js
+
 
 * Current support slide :  based reveal.js
