@@ -1,20 +1,22 @@
-webslidecontrol
-===============
-
-Remote Web Slide Control
-
+Web Slide Control
+===
 Web slide control from anywhere else.
----------------
+---
 
-* Controller
- - {node server}/index.html
- - Control the slide move
+### Controller
+Control the slide move
 
-
-
-* WebSlide
- - Control slide
- - Prerequired: jquery.js, webslidecontrol.js
+{node server}/index.html
 
 
-* Current support slide :  based reveal.js
+### WebSlide
+Control slide
+
+Prerequisites (Unix only):
+
+    * jquery.js
+    * webslidecontrol.js
+
+
+### Current support slide:
+based reveal.js
