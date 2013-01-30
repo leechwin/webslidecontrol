@@ -12,7 +12,7 @@ Control the slide move
 ### WebSlide
 Control slide
 
-Prerequisites (Unix only):
+Prerequisites:
 
     * jquery.js
     * webslidecontrol.js
