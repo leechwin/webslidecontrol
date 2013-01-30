@@ -14,9 +14,7 @@ Web slide control from anywhere else.
 
 * WebSlide
  - Control slide
- - Prerequired
-   -- jquery.js
-   -- webslidecontrol.js
+ - Prerequired: jquery.js, webslidecontrol.js
 
 
 * Current support slide :  based reveal.js
