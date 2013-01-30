@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Web BOSS(Web Build Optimization Smart System)</title>
+
+<meta name="description"
+	content="A framework for easily creating beautiful web resources using Web BOSS">
+<meta name="author" content="Hakim El Hattab">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style"
+	content="black-translucent" />
+
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
+
+<!-- Custom CSS -->
+<link type="text/css" rel="stylesheet" href="plugin/jangle/jangle.css">
+
+<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+<script>
+	document.write('<link rel="stylesheet" href="css/print/'
+			+ (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper')
+			+ '.css" type="text/css" media="print">');
+</script>
+
+<!-- Custom JS files -->
+<script src="plugin/jangle/jquery-1.6.min.js"></script>
+<script type="text/javascript" src="plugin/jangle/jquery.jangle.js"></script>
+<!-- load jangle plugin -->
+<script src="plugin/jangle/jangle.js"></script>
+
+
+<!-- Fixme -->
+<script src="http://172.21.111.44/socket.io/socket.io.js"> </script>
+<script src="http://172.21.111.44/webslidecontrol.js"></script>
+
+<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section id="intro">
+				<section id="home">
+					<h1>WEB BOSS</h1>
+					<p>
+						(Web Build Optimization Smart Service)<br>
+					</p>
+					<p>
+						<br>
+					</p>
+					<p>
+						<br>
+					</p>
+					<p>
+						<br>
+					</p>
+					<p align="right">
+						<br>
+					</p>
+					<p align="right">
+						Advisor Engineer<br>
+					</p>
+					<p align="right">Taeyoung Son</p>
+					<p align="right">
+						<br>
+					</p>
+					<div>
+						<pre>taeyoung2.son@samsung.com</pre>
+					</div>
+				</section>
+				<section id="contents">
+					<h2>Contents</h2>
+					<div align="left">
+						<ul>
+							<li><font color="#FF99FF" face="arial"><b>Web
+										Build?</b></font></li>
+							<li><font color="#FF99FF" face="arial"><b>Web
+										Build Optimization?</b></font></li>
+							<li><font color="#FF99FF" face="arial"><b>WEB
+										BOSS</b>(Web Build Optimization Smart Service)</font><br></li>
+						</ul>
+					</div>
+				</section>
+			</section>
+
+			<section id="web build">
+				<section id="general build">
+					<h2>
+						<font color="#FF99FF">Web Build?</font>
+					</h2>
+					<div align="left">
+						<h3>General</h3>
+						<ul>
+							<li>Optimize resources(html, js, css, img, ...)<br> -
+								minification<br> - concatination<br> - reduce file
+								number<br>
+							<li>little language compile<br> - coffeescript<br>
+								- sass<br> - less<br>
+							</li>
+							<li><a href="http://firejune.com/1302" target="_blank"
+								class="ugdv_link">web 최적화 지침</a></li>
+
+						</ul>
+					</div>
+				</section>
+				<section id="tizen build">
+					<h2>
+						<font color="#FF99FF">Web Build?</font>
+					</h2>
+					<div align="left">
+						<h3>in Tizen...</h3>
+						<ul>
+							<li>signing, packaging(.wgt)</li>
+							<div id="watch-player" class="flash-player player-root"
+								style="overflow: hidden;">
+								<embed type="application/x-shockwave-flash"
+									src="http://s.ytimg.com/yts/swfbin/watch_as3-vflry7sRc.swf"
+									id="movie_player"
+									flashvars="is_html5_mobile_device=False&amp;fexp=922911%2C922401%2C920704%2C912806%2C927201%2C922403%2C925003%2C913546%2C913556%2C916805%2C920201%2C901451&amp;ptk=youtube_none&amp;enablecsi=1&amp;allow_embed=0&amp;rvs=view_count%3D48%26author%3DBreakingDevelopment%26length_seconds%3D3716%26id%3D9rHyI0p1pC0%26title%3DThe%2BMobile%2BBrowser%2BWorld%2Bby%2BPeter-Paul%2BKoch%2Cview_count%3D16%26author%3DYouClickedOnMyPenis%26length_seconds%3D317%26id%3DLXULxbInCQY%26title%3DFacebook%2BFBP%2Cview_count%3D648%26author%3DMike%2BSheldon%26length_seconds%3D61%26id%3DHFlSj4RbQSg%26title%3DWebGL%2Bon%2Bthe%2BNokia%2BN9%2Busing%2BQtWebKit%2Cview_count%3D192%26author%3Dscoutersaz%26length_seconds%3D3317%26id%3DE6Jyk9g430k%26title%3DDeveloping%2Bfor%2Bthe%2BIntel%2BAppUp%2528SM%2529%2Bcenter%2Busing%2BHTML5%2Cview_count%3D236%26author%3Dcnxlinux%26length_seconds%3D2078%26id%3DzP5cMQTyl98%26title%3DHTML5%2Bin%2Ba%2BPlasma-Active%2BWorld%2B-%2BELC%2B2012%2Cview_count%3D53%252C889%26author%3Dm1k0m1k0%26length_seconds%3D556%26id%3DHj1XfakU6_c%26title%3DTizen%2BFirst%2BLook%2Cview_count%3D697%26author%3DICSNetwork%26length_seconds%3D326%26id%3DvuNjDApZfUQ%26title%3DPhoneGap%252C%2BApache%2BCordova%2Band%2BQt%2Cview_count%3D22%252C214%26author%3DPhoneArena%26length_seconds%3D328%26id%3DHkgoYzQbvvg%26title%3DSamsung%2BWave%2BM%2BPreview%2Cview_count%3D15%252C517%26author%3Dmobileburn%26length_seconds%3D159%26id%3DrfQs_TP1Q6Y%26title%3DFirst%2Blook%2Bat%2BMozilla%2BBoot%2B2%2BGecko%2Bmobile%2Boperating%2Bsystem%2Cview_count%3D29%252C026%26author%3DGoogleDevelopers%26length_seconds%3D2855%26id%3DUJPdhx5zTaw%26title%3DGoogle%2BI%252FO%2B2012%2B-%2BBreaking%2Bthe%2BJavaScript%2BSpeed%2BLimit%2Bwith%2BV8%2Cview_count%3D518%26author%3Dpriv8c1tizen%26length_seconds%3D246%26id%3DuJVjfM4pzfM%26title%3DScott%2BCleland%2BDiscusses%2Bthe%2BGoogle-Yahoo%2BAd%2BPact%2Cview_count%3D55%252C824%26author%3Djon4lakers%26length_seconds%3D117%26id%3DJvbjr4tf_Nk%26title%3DHuge%2BSecurity%2BFlaw%2B-%2BAT%2526T%2BGalaxy%2BS%2BII&amp;user_gender=m&amp;account_playback_token=FwZeZir6Dby3TaTJX1r1iFXXMVt8MTM1Mjc4NDI1MEAxMzUyNjk3ODUw&amp;autohide=2&amp;csi_page_type=watch5&amp;keywords=tizen&amp;cr=KR&amp;fmt_list=22%2F1280x720%2F9%2F0%2F115%2C35%2F854x480%2F9%2F0%2F115%2C34%2F640x360%2F9%2F0%2F115%2C18%2F640x360%2F9%2F0%2F115%2C5%2F320x240%2F7%2F0%2F0%2C36%2F320x240%2F99%2F0%2F0%2C17%2F176x144%2F99%2F0%2F0&amp;title=tizen+web+build&amp;length_seconds=73&amp;enablejsapi=1&amp;user_age=29&amp;plid=AATORYLYhTrbbHz_&amp;watch_xlb=http%3A%2F%2Fs.ytimg.com%2Fyts%2Fxlbbin%2Fwatch-strings-ko_KR-vflm-1BHM.xlb&amp;sdetail=p%3A%2Fmy_videos&amp;url_encoded_fmt_stream_map=itag%3D22%26url%3Dhttp%253A%252F%252Fr18---sn-a5m7lm76.c.youtube.com%252Fvideoplayback%253Fupn%253Du4t92vx1CT4%2526sparams%253Dcp%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Cratebypass%25252Csource%25252Cupn%25252Cexpire%2526fexp%253D922911%25252C922401%25252C920704%25252C912806%25252C927201%25252C922403%25252C925003%25252C913546%25252C913556%25252C916805%25252C920201%25252C901451%2526key%253Dyt1%2526expire%253D1352721977%2526itag%253D22%2526ipbits%253D8%2526sver%253D3%2526ratebypass%253Dyes%2526mt%253D1352697785%2526ip%253D121.133.176.1%2526mv%253Dm%2526source%253Dyoutube%2526ms%253Dnxu%2526cp%253DU0hUR1dNT19MUUNONF9PR1NKOjZSNmQ2TTBNaWpM%2526id%253D92e0c06bcfab51bb%2526newshard%253Dyes%26type%3Dvideo%252Fmp4%253B%2Bcodecs%253D%2522avc1.64001F%252C%2Bmp4a.40.2%2522%26fallback_host%3Dtc.v10.cache8.c.youtube.com%26sig%3DA00B1A8021D383E2FE8D7DAD5D97BD55F586C6B2.AB53E0801665C1C35DF96EF9975AD80B54B74246%26quality%3Dhd720%2Citag%3D35%26url%3Dhttp%253A%252F%252Fr18---sn-a5m7lm76.c.youtube.com%252Fvideoplayback%253Fupn%253Du4t92vx1CT4%2526sparams%253Dalgorithm%25252Cburst%25252Ccp%25252Cfactor%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Csource%25252Cupn%25252Cexpire%2526fexp%253D922911%25252C922401%25252C920704%25252C912806%25252C927201%25252C922403%25252C925003%25252C913546%25252C913556%25252C916805%25252C920201%25252C901451%2526expire%253D1352721977%2526algorithm%253Dthrottle-factor%2526burst%253D40%2526ip%253D121.133.176.1%2526itag%253D35%2526sver%253D3%2526key%253Dyt1%2526mt%253D1352697785%2526mv%253Dm%2526source%253Dyoutube%2526ms%253Dnxu%2526ipbits%253D8%2526factor%253D1.25%2526cp%253DU0hUR1dNT19MUUNONF9PR1NKOjZSNmQ2TTBNaWpM%2526id%253D92e0c06bcfab51bb%2526newshard%253Dyes%26type%3Dvideo%252Fx-flv%26fallback_host%3Dtc.v4.cache2.c.youtube.com%26sig%3D8D1C517B5CDE50CF09D3533C631A3BFA1E3E81CA.6AB298BE842FD88A536E51CFCC757B16293F0920%26quality%3Dlarge%2Citag%3D34%26url%3Dhttp%253A%252F%252Fr18---sn-a5m7lm76.c.youtube.com%252Fvideoplayback%253Fupn%253Du4t92vx1CT4%2526sparams%253Dalgorithm%25252Cburst%25252Ccp%25252Cfactor%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Csource%25252Cupn%25252Cexpire%2526fexp%253D922911%25252C922401%25252C920704%25252C912806%25252C927201%25252C922403%25252C925003%25252C913546%25252C913556%25252C916805%25252C920201%25252C901451%2526expire%253D1352721977%2526algorithm%253Dthrottle-factor%2526burst%253D40%2526ip%253D121.133.176.1%2526itag%253D34%2526sver%253D3%2526key%253Dyt1%2526mt%253D1352697785%2526mv%253Dm%2526source%253Dyoutube%2526ms%253Dnxu%2526ipbits%253D8%2526factor%253D1.25%2526cp%253DU0hUR1dNT19MUUNONF9PR1NKOjZSNmQ2TTBNaWpM%2526id%253D92e0c06bcfab51bb%2526newshard%253Dyes%26type%3Dvideo%252Fx-flv%26fallback_host%3Dtc.v10.cache5.c.youtube.com%26sig%3DD18DEF054D39B750530B7EFDBF8B1D72063A42DB.0B4E88841F4C49C43C52054DB47359B327FCC6DE%26quality%3Dmedium%2Citag%3D18%26url%3Dhttp%253A%252F%252Fr18---sn-a5m7lm76.c.youtube.com%252Fvideoplayback%253Fupn%253Du4t92vx1CT4%2526sparams%253Dcp%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Cratebypass%25252Csource%25252Cupn%25252Cexpire%2526fexp%253D922911%25252C922401%25252C920704%25252C912806%25252C927201%25252C922403%25252C925003%25252C913546%25252C913556%25252C916805%25252C920201%25252C901451%2526key%253Dyt1%2526expire%253D1352721977%2526itag%253D18%2526ipbits%253D8%2526sver%253D3%2526ratebypass%253Dyes%2526mt%253D1352697785%2526ip%253D121.133.176.1%2526mv%253Dm%2526source%253Dyoutube%2526ms%253Dnxu%2526cp%253DU0hUR1dNT19MUUNONF9PR1NKOjZSNmQ2TTBNaWpM%2526id%253D92e0c06bcfab51bb%2526newshard%253Dyes%26type%3Dvideo%252Fmp4%253B%2Bcodecs%253D%2522avc1.42001E%252C%2Bmp4a.40.2%2522%26fallback_host%3Dtc.v20.cache2.c.youtube.com%26sig%3D6EA8193E34C3170A8D1577CB7A9A7492F3E538D0.82679CCB10F365AABF9A2D2777107D30AFD0D0FD%26quality%3Dmedium%2Citag%3D5%26url%3Dhttp%253A%252F%252Fr18---sn-a5m7lm76.c.youtube.com%252Fvideoplayback%253Fupn%253Du4t92vx1CT4%2526sparams%253Dalgorithm%25252Cburst%25252Ccp%25252Cfactor%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Csource%25252Cupn%25252Cexpire%2526fexp%253D922911%25252C922401%25252C920704%25252C912806%25252C927201%25252C922403%25252C925003%25252C913546%25252C913556%25252C916805%25252C920201%25252C901451%2526expire%253D1352721977%2526algorithm%253Dthrottle-factor%2526burst%253D40%2526ip%253D121.133.176.1%2526itag%253D5%2526sver%253D3%2526key%253Dyt1%2526mt%253D1352697785%2526mv%253Dm%2526source%253Dyoutube%2526ms%253Dnxu%2526ipbits%253D8%2526factor%253D1.25%2526cp%253DU0hUR1dNT19MUUNONF9PR1NKOjZSNmQ2TTBNaWpM%2526id%253D92e0c06bcfab51bb%2526newshard%253Dyes%26type%3Dvideo%252Fx-flv%26fallback_host%3Dtc.v7.cache2.c.youtube.com%26sig%3DC0E692B1B6C8159E5C63B1997A44D9DFA63463FD.46199C232B129A6165306F869C203922F1DE5527%26quality%3Dsmall%2Citag%3D36%26url%3Dhttp%253A%252F%252Fr18---sn-a5m7lm76.c.youtube.com%252Fvideoplayback%253Fupn%253Du4t92vx1CT4%2526sparams%253Dalgorithm%25252Cburst%25252Ccp%25252Cfactor%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Csource%25252Cupn%25252Cexpire%2526fexp%253D922911%25252C922401%25252C920704%25252C912806%25252C927201%25252C922403%25252C925003%25252C913546%25252C913556%25252C916805%25252C920201%25252C901451%2526expire%253D1352721977%2526algorithm%253Dthrottle-factor%2526burst%253D40%2526ip%253D121.133.176.1%2526itag%253D36%2526sver%253D3%2526key%253Dyt1%2526mt%253D1352697785%2526mv%253Dm%2526source%253Dyoutube%2526ms%253Dnxu%2526ipbits%253D8%2526factor%253D1.25%2526cp%253DU0hUR1dNT19MUUNONF9PR1NKOjZSNmQ2TTBNaWpM%2526id%253D92e0c06bcfab51bb%2526newshard%253Dyes%26type%3Dvideo%252F3gpp%253B%2Bcodecs%253D%2522mp4v.20.3%252C%2Bmp4a.40.2%2522%26fallback_host%3Dtc.v12.cache1.c.youtube.com%26sig%3D29267ED8827026B29DC6750007FE8A6B103D0737.39C116BDDC11B5AA630379B50A6608ED2216EBED%26quality%3Dsmall%2Citag%3D17%26url%3Dhttp%253A%252F%252Fr18---sn-a5m7lm76.c.youtube.com%252Fvideoplayback%253Fupn%253Du4t92vx1CT4%2526sparams%253Dalgorithm%25252Cburst%25252Ccp%25252Cfactor%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Csource%25252Cupn%25252Cexpire%2526fexp%253D922911%25252C922401%25252C920704%25252C912806%25252C927201%25252C922403%25252C925003%25252C913546%25252C913556%25252C916805%25252C920201%25252C901451%2526expire%253D1352721977%2526algorithm%253Dthrottle-factor%2526burst%253D40%2526ip%253D121.133.176.1%2526itag%253D17%2526sver%253D3%2526key%253Dyt1%2526mt%253D1352697785%2526mv%253Dm%2526source%253Dyoutube%2526ms%253Dnxu%2526ipbits%253D8%2526factor%253D1.25%2526cp%253DU0hUR1dNT19MUUNONF9PR1NKOjZSNmQ2TTBNaWpM%2526id%253D92e0c06bcfab51bb%2526newshard%253Dyes%26type%3Dvideo%252F3gpp%253B%2Bcodecs%253D%2522mp4v.20.3%252C%2Bmp4a.40.2%2522%26fallback_host%3Dtc.v17.cache6.c.youtube.com%26sig%3DA8F335F93B917F69918FA514C0C89C0BB4420AB5.84ACCEF373AB4FE93006549E21B2403A84E2BB38%26quality%3Dsmall&amp;watermark=%2Chttp%3A%2F%2Fs.ytimg.com%2Fyts%2Fimg%2Fwatermark%2Fyoutube_watermark-vflHX6b6E.png%2Chttp%3A%2F%2Fs.ytimg.com%2Fyts%2Fimg%2Fwatermark%2Fyoutube_hd_watermark-vflAzLcD6.png&amp;sourceid=y&amp;timestamp=1352697850&amp;storyboard_spec=http%3A%2F%2Fi4.ytimg.com%2Fsb%2FkuDAa8-rUbs%2Fstoryboard3_L%24L%2F%24N.jpg%7C48%2327%23100%2310%2310%230%23default%23p1IxOuDVrKMUckio5NSBcdFyi-Q&amp;watch_ajax_token=QBBczuAQ-KRYQK7IcilG8lQ6E2h8MTM1Mjc4NDI1MEAxMzUyNjk3ODUw&amp;showpopout=1&amp;hl=ko_KR&amp;abd=1&amp;endscreen_module=http%3A%2F%2Fs.ytimg.com%2Fyts%2Fswfbin%2Fendscreen-vfl-GkD9i.swf&amp;vq=auto&amp;referrer=http%3A%2F%2Fwww.youtube.com%2Fmy_videos%3Ffeature%3Dmhee&amp;logwatch=1&amp;sendtmp=1&amp;sk=MHJO_PSk-QhoWBhdlP2bLUCLtM9UgMp5U&amp;pltype=contentugc&amp;t=vjVQa1PpcFMGTJERNpzenzg48RKGe7CPEvkWSeUb3h4%3D&amp;video_id=kuDAa8-rUbs"
+									allowscriptaccess="always" allowfullscreen="true"
+									bgcolor="#000000">
+							</div>
+						</ul>
+					</div>
+				</section>
+				<section id="tizen build2">
+					<h2>
+						<font color="#FF99FF">Web Build?</font>
+					</h2>
+					<div align="left">
+						<h3>in Tizen...</h3>
+						<ul>
+							<li>minify, lint</li>
+							<div id="watch-player" class="flash-player player-root"
+								style="overflow: hidden;">
+								<embed type="application/x-shockwave-flash"
+									src="http://s.ytimg.com/yts/swfbin/watch_as3-vflry7sRc.swf"
+									id="movie_player"
+									flashvars="is_html5_mobile_device=False&amp;fexp=922911%2C922401%2C920704%2C912806%2C927201%2C922403%2C925003%2C913546%2C913556%2C916805%2C920201%2C901451&amp;ptk=youtube_none&amp;enablecsi=1&amp;allow_embed=1&amp;rvs=view_count%3D642%252C598%26author%3DVsauce%26length_seconds%3D387%26id%3D4e_kz79tjb8%26title%3DHow%2BMany%2BPhotos%2BHave%2BBeen%2BTaken%253F%2Cview_count%3D555%252C615%26author%3DMicrosoftResearch%26length_seconds%3D545%26id%3DNu-nlQqFCKg%26title%3DSpeech%2BRecognition%2BBreakthrough%2Bfor%2Bthe%2BSpoken%252C%2BTranslated%2BWord%2Cview_count%3D354%252C396%26author%3Drecombu%26length_seconds%3D124%26id%3DBnioM-nkhqc%26title%3DApple%2BiPhone%2B5%2Bscrolling%2Bglitch%2Bdemo%2Cview_count%3D197%252C957%26author%3Dtldtoday%26length_seconds%3D289%26id%3Dd0M6pv9qAH4%26title%3DApple%2BFusion%2BDrive%253A%2BSpeedtest%2B%2526%2BDemo%2B%2528It%2527s%2Bfast%2529%2Cview_count%3D59%252C887%26author%3DSoldierKnowsBest%26length_seconds%3D436%26id%3DHA6dE62a9WM%26title%3DiPad%2BMini%2BReview&amp;user_gender=m&amp;account_playback_token=J6jZc4ocwJaK7nhQwI1JTfTuVbF8MTM1Mjc4NzU1NUAxMzUyNzAxMTU1&amp;autohide=2&amp;csi_page_type=watch5&amp;keywords=tizen&amp;cr=KR&amp;fmt_list=22%2F1280x720%2F9%2F0%2F115%2C35%2F854x480%2F9%2F0%2F115%2C34%2F640x360%2F9%2F0%2F115%2C18%2F640x360%2F9%2F0%2F115%2C5%2F320x240%2F7%2F0%2F0&amp;title=tizen+web+minify%2Clint&amp;length_seconds=88&amp;enablejsapi=1&amp;user_age=29&amp;plid=AATORkfWHkQKufzC&amp;watch_xlb=http%3A%2F%2Fs.ytimg.com%2Fyts%2Fxlbbin%2Fwatch-strings-ko_KR-vflm-1BHM.xlb&amp;sdetail=p%3A%2Fmy_videos&amp;url_encoded_fmt_stream_map=itag%3D22%26url%3Dhttp%253A%252F%252Fr17---sn-q4f7dm7k.c.youtube.com%252Fvideoplayback%253Fupn%253Dm2Krqn6MU5Q%2526sparams%253Dcp%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Cratebypass%25252Csource%25252Cupn%25252Cexpire%2526fexp%253D922911%25252C922401%25252C920704%25252C912806%25252C927201%25252C922403%25252C925003%25252C913546%25252C913556%25252C916805%25252C920201%25252C901451%2526key%253Dyt1%2526expire%253D1352723675%2526itag%253D22%2526ipbits%253D8%2526sver%253D3%2526ratebypass%253Dyes%2526mt%253D1352701145%2526ip%253D121.133.176.1%2526mv%253Dm%2526source%253Dyoutube%2526ms%253Dnxu%2526cp%253DU0hUR1dNUV9MT0NONF9PR1VHOjRSNmQ2TTBPZmpK%2526id%253D8bef43a50f47bcbf%2526newshard%253Dyes%26type%3Dvideo%252Fmp4%253B%2Bcodecs%253D%2522avc1.64001F%252C%2Bmp4a.40.2%2522%26fallback_host%3Dtc.v8.cache2.c.youtube.com%26sig%3D87B368B0E796F1D608EB13FC67A57FE4ADCC0909.87C9B4C714158FC7F86DE51EA2F3613A8AE554D3%26quality%3Dhd720%2Citag%3D35%26url%3Dhttp%253A%252F%252Fr17---sn-q4f7dm7k.c.youtube.com%252Fvideoplayback%253Fupn%253Dm2Krqn6MU5Q%2526sparams%253Dalgorithm%25252Cburst%25252Ccp%25252Cfactor%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Csource%25252Cupn%25252Cexpire%2526fexp%253D922911%25252C922401%25252C920704%25252C912806%25252C927201%25252C922403%25252C925003%25252C913546%25252C913556%25252C916805%25252C920201%25252C901451%2526expire%253D1352723675%2526algorithm%253Dthrottle-factor%2526burst%253D40%2526ip%253D121.133.176.1%2526itag%253D35%2526sver%253D3%2526key%253Dyt1%2526mt%253D1352701145%2526mv%253Dm%2526source%253Dyoutube%2526ms%253Dnxu%2526ipbits%253D8%2526factor%253D1.25%2526cp%253DU0hUR1dNUV9MT0NONF9PR1VHOjRSNmQ2TTBPZmpK%2526id%253D8bef43a50f47bcbf%2526newshard%253Dyes%26type%3Dvideo%252Fx-flv%26fallback_host%3Dtc.v23.cache1.c.youtube.com%26sig%3D25CAF6EE379E836EEA8B3B3749CF9636EADE28C1.5A09ACEFB0599DC037BEBF8373A4A1E3FF8D500A%26quality%3Dlarge%2Citag%3D34%26url%3Dhttp%253A%252F%252Fr17---sn-q4f7dm7k.c.youtube.com%252Fvideoplayback%253Fupn%253Dm2Krqn6MU5Q%2526sparams%253Dalgorithm%25252Cburst%25252Ccp%25252Cfactor%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Csource%25252Cupn%25252Cexpire%2526fexp%253D922911%25252C922401%25252C920704%25252C912806%25252C927201%25252C922403%25252C925003%25252C913546%25252C913556%25252C916805%25252C920201%25252C901451%2526expire%253D1352723675%2526algorithm%253Dthrottle-factor%2526burst%253D40%2526ip%253D121.133.176.1%2526itag%253D34%2526sver%253D3%2526key%253Dyt1%2526mt%253D1352701145%2526mv%253Dm%2526source%253Dyoutube%2526ms%253Dnxu%2526ipbits%253D8%2526factor%253D1.25%2526cp%253DU0hUR1dNUV9MT0NONF9PR1VHOjRSNmQ2TTBPZmpK%2526id%253D8bef43a50f47bcbf%2526newshard%253Dyes%26type%3Dvideo%252Fx-flv%26fallback_host%3Dtc.v5.cache6.c.youtube.com%26sig%3D64A3C7E9500DB437F50028B8C24E2CC074BE71B1.5E2EFB882DA25178CE55ECE7011F5D134E6B5C86%26quality%3Dmedium%2Citag%3D18%26url%3Dhttp%253A%252F%252Fr17---sn-q4f7dm7k.c.youtube.com%252Fvideoplayback%253Fupn%253Dm2Krqn6MU5Q%2526sparams%253Dcp%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Cratebypass%25252Csource%25252Cupn%25252Cexpire%2526fexp%253D922911%25252C922401%25252C920704%25252C912806%25252C927201%25252C922403%25252C925003%25252C913546%25252C913556%25252C916805%25252C920201%25252C901451%2526key%253Dyt1%2526expire%253D1352723675%2526itag%253D18%2526ipbits%253D8%2526sver%253D3%2526ratebypass%253Dyes%2526mt%253D1352701145%2526ip%253D121.133.176.1%2526mv%253Dm%2526source%253Dyoutube%2526ms%253Dnxu%2526cp%253DU0hUR1dNUV9MT0NONF9PR1VHOjRSNmQ2TTBPZmpK%2526id%253D8bef43a50f47bcbf%2526newshard%253Dyes%26type%3Dvideo%252Fmp4%253B%2Bcodecs%253D%2522avc1.42001E%252C%2Bmp4a.40.2%2522%26fallback_host%3Dtc.v13.cache1.c.youtube.com%26sig%3D770A8999E3B09498248F55E38576DAE987458AB2.C6AF13DE95C54F246067E8010D013166D21D94E9%26quality%3Dmedium%2Citag%3D5%26url%3Dhttp%253A%252F%252Fr17---sn-q4f7dm7k.c.youtube.com%252Fvideoplayback%253Fupn%253Dm2Krqn6MU5Q%2526sparams%253Dalgorithm%25252Cburst%25252Ccp%25252Cfactor%25252Cid%25252Cip%25252Cipbits%25252Citag%25252Csource%25252Cupn%25252Cexpire%2526fexp%253D922911%25252C922401%25252C920704%25252C912806%25252C927201%25252C922403%25252C925003%25252C913546%25252C913556%25252C916805%25252C920201%25252C901451%2526expire%253D1352723675%2526algorithm%253Dthrottle-factor%2526burst%253D40%2526ip%253D121.133.176.1%2526itag%253D5%2526sver%253D3%2526key%253Dyt1%2526mt%253D1352701145%2526mv%253Dm%2526source%253Dyoutube%2526ms%253Dnxu%2526ipbits%253D8%2526factor%253D1.25%2526cp%253DU0hUR1dNUV9MT0NONF9PR1VHOjRSNmQ2TTBPZmpK%2526id%253D8bef43a50f47bcbf%2526newshard%253Dyes%26type%3Dvideo%252Fx-flv%26fallback_host%3Dtc.v2.cache8.c.youtube.com%26sig%3D1705B444B314CC6C93068BD490050A6F8B4CFC3C.388CCC830B67837B4A4FF1244292537779855F89%26quality%3Dsmall&amp;watermark=%2Chttp%3A%2F%2Fs.ytimg.com%2Fyts%2Fimg%2Fwatermark%2Fyoutube_watermark-vflHX6b6E.png%2Chttp%3A%2F%2Fs.ytimg.com%2Fyts%2Fimg%2Fwatermark%2Fyoutube_hd_watermark-vflAzLcD6.png&amp;sourceid=y&amp;timestamp=1352701155&amp;watch_ajax_token=-MLS-dtv12aeViI8xYkOL_OEYm98MTM1Mjc4NzU1NUAxMzUyNzAxMTU1&amp;showpopout=1&amp;hl=ko_KR&amp;abd=1&amp;endscreen_module=http%3A%2F%2Fs.ytimg.com%2Fyts%2Fswfbin%2Fendscreen-vfl-GkD9i.swf&amp;vq=auto&amp;referrer=http%3A%2F%2Fwww.youtube.com%2Fmy_videos&amp;logwatch=1&amp;sendtmp=1&amp;sk=MHJO_PSk-QhoWBhdlP2bLUCLtM9UgMp5U&amp;pltype=contentugc&amp;t=vjVQa1PpcFOj1943ScNDRLQ0GaCxPqOTfJIMQzicy-A%3D&amp;video_id=i-9DpQ9HvL8"
+									allowscriptaccess="always" allowfullscreen="true"
+									bgcolor="#000000">
+							</div>
+						</ul>
+					</div>
+				</section>
+			</section>
+
+			<section id="web build optimization">
+				<section>
+					<h2>
+						<font color="#FF99FF">Web Build Optimization?</font>
+					</h2>
+					<div align="left">
+						<h3>reduce build time</h3>
+						<ul>
+							<li>rebuild modified resources only</li>
+							<li>recompile modified little languages only</li>
+						</ul>
+						<h3>
+							<br>error check realtime
+						</h3>
+						<ul>
+							<li>html - using html lint
+							<li>js - using jslint or jshint</li>
+							<li>css - using csslint</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>
+						<font color="#FF99FF">WEB BOSS</font>
+					</h2>
+					<div align="left">
+						<h3>Compile little language</h3>
+						<table>
+							<tbody>
+								<tr>
+									<td width="400">
+										<ul>
+											<li>coffee script</li>
+											<li>sass</li>
+											<li>less</li>
+										</ul>
+									</td>
+									<td>recompile modified little languages only</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+				<section>
+					<h2>
+						<font color="#FF99FF">WEB BOSS</font>
+					</h2>
+					<div align="left">
+						<h3>Optimize resources</h3>
+						<table>
+							<tbody>
+								<tr>
+									<td width="400">
+										<ul>
+											<li>html, js, css</li>
+											<li>images(png, jpeg, gif, ...)</li>
+											<li>less</li>
+										</ul>
+									</td>
+									<td>rebuild modified resources only</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+				</section>
+				<section>
+					<h2>
+						<font color="#FF99FF">web boss</font>
+					</h2>
+					<div align="left">
+						<h3>error check realtime</h3>
+						<ul>
+							<li>using liview</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+
+	<script>
+		// Full list of configuration options available here:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls : true,
+			progress : true,
+			history : true,
+
+			theme : Reveal.getQueryHash().theme, // available themes are in /css/theme
+			transition : Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+			// Optional libraries used to extend on reveal.js
+			dependencies : [ {
+				src : 'lib/js/highlight.js',
+				async : true,
+				callback : function() {
+					window.hljs.initHighlightingOnLoad();
+				}
+			}, {
+				src : 'lib/js/classList.js',
+				condition : function() {
+					return !document.body.classList;
+				}
+			}, {
+				src : 'lib/js/showdown.js',
+				condition : function() {
+					return !!document.querySelector('[data-markdown]');
+				}
+			}, {
+				src : 'lib/js/data-markdown.js',
+				condition : function() {
+					return !!document.querySelector('[data-markdown]');
+				}
+			}, {
+				src : 'plugin/zoom-js/zoom.js',
+				async : true,
+				condition : function() {
+					return !!document.body.classList;
+				}
+			}, {
+				src : 'plugin/notes/notes.js',
+				async : true,
+				condition : function() {
+					return !!document.body.classList;
+				}
+			} ]
+		});
+	</script>
+
+
+
+</body>
+</html>
