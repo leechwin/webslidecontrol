@@ -9,7 +9,9 @@
 
 	<title> Controller </title>
 
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -18,12 +20,23 @@
 </head>
 
 <body>
-	<div>Controller</div>
-	<button onclick='pre()'>Pre</button>
-	<button onclick='next()'>Next</button>
+
+    <div class="container">
+
+    	<h1>Controller</h1><br>
+        <div>ServerState: <span id='state' class="label label-success"></span></div><br>
+
+        <div class="btn-group">
+          <button class="btn btn-large" onclick='pre()'>Pre</button>
+          <button class="btn btn-large" onclick='next()'>Next</button>
+        </div>
+
+
+    </div>
 
     <!--Loading -->
     <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>  <!-- http://twitter.github.com/bootstrap/index.html -->
     <script src="socket.io/socket.io.js"> </script>
 
     <script src="js/main.js"></script>

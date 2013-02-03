@@ -35,6 +35,26 @@ var http = require('http'),
                   res.end(data);
                   console.log('[Server] Send  jquery-1.7.1.min.js');
               });
+          } else if(reqFile === '/css/bootstrap.min.css') {
+              fs.readFile(__dirname + '/public/css/bootstrap.min.css', function (err, data) {
+                  if (err) {
+                      res.writeHead(500);
+                      return res.end('Error loading bootstrap.min.css');
+                  }
+                  res.writeHead(200, {'Content-Type': 'text/css'});
+                  res.end(data);
+                  console.log('[Server] Send  bootstrap.min.css');
+              });
+          } else if(reqFile === '/css/bootstrap-responsive.min.css') {
+              fs.readFile(__dirname + '/public/css/bootstrap-responsive.min.css', function (err, data) {
+                  if (err) {
+                      res.writeHead(500);
+                      return res.end('Error loading bootstrap-responsive.min.css');
+                  }
+                  res.writeHead(200, {'Content-Type': 'text/css'});
+                  res.end(data);
+                  console.log('[Server] Send  bootstrap-responsive.min.css');
+              });
           } else if(reqFile === '/js/main.js') {
               fs.readFile(__dirname + '/public/js/main.js', function (err, data) {
                   if (err) {
@@ -44,6 +64,16 @@ var http = require('http'),
                   res.writeHead(200, {'Content-Type': 'application/javascript'});
                   res.end(data);
                   console.log('[Server] Send  main.js');
+              });
+          } else if(reqFile === '/js/bootstrap.min.js') {
+              fs.readFile(__dirname + '/public/js/bootstrap.min.js', function (err, data) {
+                  if (err) {
+                      res.writeHead(500);
+                      return res.end('Error loading bootstrap.min.js');
+                  }
+                  res.writeHead(200, {'Content-Type': 'application/javascript'});
+                  res.end(data);
+                  console.log('[Server] Send  bootstrap.min.js');
               });
           } else if (reqFile === '/favicon.ico') {
               fs.readFile(__dirname + '/favicon.ico', function (err, data) {
