@@ -6,12 +6,8 @@
   },
   "dependencies": {
     "express": "2.5.x",
-    "jade": "*"
-//    "socket.io": "0.9.13",
-//    "fs": "*",
-//    "path": "*",
-    //"connect": "*",
-    //"require": "*"
+    "jade": "*",
+    "socket.io": "*"
   },
   "engines": {
     "node": "*",
