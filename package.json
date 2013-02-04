@@ -5,15 +5,16 @@
     "start": "node app"
   },
   "dependencies": {
-    "express": "2.5.x"
+    "express": "2.5.x",
+    "jade": "*"
+//    "socket.io": "0.9.13",
+//    "fs": "*",
+//    "path": "*",
+    //"connect": "*",
+    //"require": "*"
   },
   "engines": {
     "node": "0.8.x",
     "npm": "1.1.x"
-  },
-  "dependencies": {
-    "fs": "0.0.x",
-    "require": "0.4.9",
-    "socket.io": "0.9.13"
   }
 }

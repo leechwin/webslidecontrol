@@ -2,7 +2,14 @@ var socket;
 
 //Initialize function
 var init = function () {
-    socket = io.connect('http://172.21.111.44:80');
+    var port = (location.port || location.host.split(':')[1] );
+    if ( !port || port.length == 0 ) {
+        portStr = '';
+    } else {
+        portStr = ':' + port;
+    }
+    var url = 'http://' + ( location.host || 'localhost' ).split( ':' )[0] + portStr;
+    socket = io.connect(url);
 
     socket.on('connect', function (data) {
         $('#state').attr('class', 'label label-success').html('connedted');
@@ -15,17 +22,18 @@ var init = function () {
 
     socket.on('server', function (data) {
         console.log("[Controller] " + data);
-        socket.emit('client', 'Controller connection success');
+        //socket.emit('client', 'Controller connection success');
         $('.label-success').html('connedted');
     });
 };
 $(document).ready(init);
 
 function pre() {
-	socket.emit('pre', { pre: 'button' });
+	socket.emit('pre');
+    console.log("[Controller] pre");
 }
 
 function next() {
-	socket.emit('next', { next: 'button' });
+	socket.emit('next');
+    console.log("[Controller] next");
 }
-
