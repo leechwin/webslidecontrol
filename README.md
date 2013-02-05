@@ -4,19 +4,21 @@ Web slide control from anywhere else.
 ---
 
 ### Controller
-Control the slide move
+Control the slide
 
-{node server}/index.html
+http://slidecontrol.herokuapp.com/
 
 
 ### WebSlide
-Control slide
+Controlled slide
 
 Prerequisites:
 
-    * jquery.js
-    * webslidecontrol.js
+    * <script src="http://code.jquery.com/jquery.js"></script>
+    * <script src="http://slidecontrol.herokuapp.com//socket.io/socket.io.js"></script>
+    * <script src="http://slidecontrol.herokuapp.com//webslidecontrol.js"></script>
 
 
-### Current support slide:
-based reveal.js
+Current support slide framework:
+
+    * reveal.js based slide
