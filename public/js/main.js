@@ -12,7 +12,7 @@ var init = function () {
     socket = io.connect(url);
 
     socket.on('connect', function (data) {
-        $('#state').attr('class', 'label label-success').html('connedted');
+        $('#state').attr('class', 'label label-success').html('connected');
     });
 
     socket.on('disconnect', function (data) {

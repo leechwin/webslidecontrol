@@ -2,7 +2,7 @@ var express = require('express'), // web framework
       connect = require( 'connect' ), // Server
       http = require('http'), // Web Server
       io = require('socket.io'), // Socket.io
-      fs = require('fs'),
+      fs = require('fs'), // File system
       path = require('path'); // Path
 
 var app = express();
@@ -192,5 +192,4 @@ socket.on('connection', function(client) {
     });
 });
 */
-
 // http://howtonode.org/socket-io-auth

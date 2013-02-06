@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -60px;
+}
+
+.footer {
+    height: 60px;
+    color: #666;
+    background: #222;
+    padding-left: 20px;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    .footer {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-right: 20px;
+      
+    }
+}
+
+.btn-large {
+  padding: 50px 50px;
+}
