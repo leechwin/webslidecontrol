@@ -2,7 +2,7 @@ var express = require('express'), // web framework
       connect = require( 'connect' ), // Server
       http = require('http'), // Web Server
       io = require('socket.io'), // Socket.io
-      //fs = require('fs'),
+      fs = require('fs'),
       path = require('path'); // Path
 
 var app = express();
