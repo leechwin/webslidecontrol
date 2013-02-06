@@ -13,7 +13,7 @@ var init = function () {
     socket = io.connect(url);
     */
 
-    socket = io.connect('http://slidecontrol.herokuapp.com');
+    socket = io.connect('http://172.21.111.44:3000');
 
     socket.on('pre', function (data) {
         console.log("[Slide] pre " + data);

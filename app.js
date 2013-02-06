@@ -18,6 +18,29 @@ app.configure( function(){
   app.use( express.static( path.join( __dirname, 'public' ) ) );
 });
 
+app.get( '/webslidecontrol.js', function( req, res) {
+  res.writeHead(200, {'Content-Type': 'application/javascript'});
+
+  var socketStraem = fs.createReadStream( './node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.js');
+  socketStraem.on('data', function(data) {
+    console.log("socket.io : ");
+    res.write(data);
+  });
+
+  socketStraem.on('close', function() {
+    var webslideStraem = fs.createReadStream( './webslidecontrol.js');
+    webslideStraem.on('data', function(data) {
+      console.log("webslide : ");
+      res.write(data);
+    });
+
+    webslideStraem.on('close', function() {
+      res.end();
+
+    });
+  });
+});
+
 // Start server
 io = io.listen( http.createServer( app ).listen( app.get('port'), function() {
   console.log( "Express server listening on port " + app.get( 'port' ) );
