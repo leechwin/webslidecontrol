@@ -57,6 +57,16 @@ io.sockets.on( 'connection', function( socket ) {
     console.log('[Server] disconnect');
   });
 
+  socket.on('start', function (data) {
+      console.log('[Server] start ' + data);
+      socket.broadcast.emit('start');
+  });
+
+  socket.on('end', function (data) {
+      console.log('[Server] end ' + data);
+      socket.broadcast.emit('end');
+  });
+
   socket.on('pre', function (data) {
       console.log('[Server] pre ' + data);
       socket.broadcast.emit('pre');

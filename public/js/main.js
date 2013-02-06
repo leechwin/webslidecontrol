@@ -28,6 +28,16 @@ var init = function () {
 };
 $(document).ready(init);
 
+function start() {
+    socket.emit('start');
+    console.log("[Controller] start");
+}
+
+function end() {
+    socket.emit('end');
+    console.log("[Controller] end");
+}
+
 function pre() {
 	socket.emit('pre');
     console.log("[Controller] pre");
