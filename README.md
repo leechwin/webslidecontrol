@@ -18,9 +18,6 @@ Prerequisites:
 
 Your webslide include follow links:
 
-    - jquery
-        <script src="http://code.jquery.com/jquery.js"></script>
-
     - webslidecontrol client
         <script src="http://webslidecontrol.herokuapp.com/webslidecontrol.js"></script>
 
