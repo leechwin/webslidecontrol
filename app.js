@@ -28,14 +28,22 @@ app.get( '/webslidecontrol.js', function( req, res) {
   });
 
   socketStraem.on('close', function() {
-    var webslideStraem = fs.createReadStream( './webslidecontrol.js');
-    webslideStraem.on('data', function(data) {
-      console.log("webslide : ");
+    var jqueryStraem = fs.createReadStream( './public/js/jquery-1.7.1.min.js');
+    jqueryStraem.on('data', function(data) {
+      console.log("jquery : ");
       res.write(data);
     });
 
-    webslideStraem.on('close', function() {
-      res.end();
+    jqueryStraem.on('close', function() {
+      var webslideStraem = fs.createReadStream( './webslidecontrol.js');
+      webslideStraem.on('data', function(data) {
+        console.log("webslide : ");
+        res.write(data);
+      });
+
+      webslideStraem.on('close', function() {
+        res.end();
+      });
 
     });
   });
