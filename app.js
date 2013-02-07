@@ -21,7 +21,7 @@ app.configure( function(){
 app.get( '/webslidecontrol.js', function( req, res) {
   res.writeHead(200, {'Content-Type': 'application/javascript'});
 
-  var socketStraem = fs.createReadStream( './node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.js');
+  var socketStraem = fs.createReadStream( './node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.min.js');
   socketStraem.on('data', function(data) {
     console.log("socket.io : ");
     res.write(data);
