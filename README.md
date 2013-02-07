@@ -26,3 +26,4 @@ Current support slide framework:
 
     * reveal.js based slide
     * impress.js based slide
+    * slide-presentation.js based slide
