@@ -26,3 +26,4 @@ Your webslide include follow links:
 Current support slide framework:
 
     * reveal.js based slide
+    * impress.js based slide
