@@ -8,7 +8,7 @@ http://leechwin.github.com/webslidecontrol/
 ### Controller
 Control the slide
 
-http://slidecontrol.herokuapp.com/
+http://webslidecontrol.herokuapp.com/
 
 
 ### WebSlide
@@ -22,7 +22,7 @@ Your webslide include follow links:
         <script src="http://code.jquery.com/jquery.js"></script>
 
     - webslidecontrol client
-        <script src="http://slidecontrol.herokuapp.com//webslidecontrol.js"></script>
+        <script src="http://webslidecontrol.herokuapp.com/webslidecontrol.js"></script>
 
 
 Current support slide framework:

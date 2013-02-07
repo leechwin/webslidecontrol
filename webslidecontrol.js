@@ -2,7 +2,7 @@ var socket;
 
 //Initialize function
 var init = function () {
-    socket = io.connect('http://slidecontrol.herokuapp.com');
+    socket = io.connect('http://webslidecontrol.herokuapp.com');
 
     socket.on('start', function (data) {
         console.log("[Slide] start " + data);
