@@ -1,29 +1,31 @@
 Web Slide Control
 ===
 Web slide control from anywhere else.
+
+http://leechwin.github.com/webslidecontrol/
 ---
 
 ### Controller
 Control the slide
 
-http://slidecontrol.herokuapp.com/
+http://webslidecontrol.herokuapp.com/
 
 
 ### WebSlide
 Controlled slide
 
+Demo: http://leechwin.github.com/webslidecontrol/
+
 Prerequisites:
 
 Your webslide include follow links:
 
-    - jquery
-        <script src="http://code.jquery.com/jquery.js"></script>
-
     - webslidecontrol client
-        <script src="http://slidecontrol.herokuapp.com//webslidecontrol.js"></script>
+        <script src="http://webslidecontrol.herokuapp.com/webslidecontrol.js"></script>
 
 
 Current support slide framework:
 
     * reveal.js based slide
     * impress.js based slide
+    * slide-presentation.js based slide
