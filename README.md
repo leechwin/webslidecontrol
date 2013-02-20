@@ -14,6 +14,8 @@ http://webslidecontrol.herokuapp.com/
 ### WebSlide
 Controlled slide
 
+Demo: http://leechwin.github.com/webslidecontrol/
+
 Prerequisites:
 
 Your webslide include follow links:
