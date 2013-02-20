@@ -1,8 +1,6 @@
 Web Slide Control
 ===
 Web slide control from anywhere else.
-
-http://leechwin.github.com/webslidecontrol/
 ---
 
 ### Controller
