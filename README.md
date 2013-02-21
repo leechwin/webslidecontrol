@@ -6,7 +6,9 @@ Web slide control from anywhere else.
 ### Controller
 Control the slide
 
-http://webslidecontrol.herokuapp.com/
+    - Login by email
+    
+Demo: http://webslidecontrol.herokuapp.com/
 
 
 ### WebSlide
@@ -18,8 +20,13 @@ Prerequisites:
 
 Your webslide include follow links:
 
-    - webslidecontrol client
-        <script src="http://webslidecontrol.herokuapp.com/webslidecontrol.js"></script>
+    - Webslidecontrol client
+    - Added user email
+      - Email is used to controller login.
+
+        <script src="http://webslidecontrol.herokuapp.com/webslidecontrol.js?user=Email"></script>
+        
+    ex) <script src="http://webslidecontrol.herokuapp.com/webslidecontrol.js?user=leechwin1@gmail.com"></script>
 
 
 Current support slide framework:
