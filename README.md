@@ -21,7 +21,7 @@ Prerequisites:
 Your webslide include follow links:
 
     - Webslidecontrol client
-    - Added user email
+    - Added user email param
       - Email is used to controller login.
 
         <script src="http://webslidecontrol.herokuapp.com/webslidecontrol.js?user=Email"></script>
