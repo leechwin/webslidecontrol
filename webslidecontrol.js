@@ -2,6 +2,8 @@ var socket;
 
 //Initialize function
 var init = function () {
+    // FIXME:: Localtest url
+    //socket = io.connect('127.0.0.1:3000');
     socket = io.connect('http://webslidecontrol.herokuapp.com');
 
     socket.on('start', function (data) {

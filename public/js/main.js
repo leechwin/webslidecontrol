@@ -1,3 +1,4 @@
+var user = '';
 var socket;
 
 //Initialize function
@@ -28,22 +29,32 @@ var init = function () {
 };
 $(document).ready(init);
 
+
+function login() {
+    user = $('#email').val();
+    if (user !== '') {
+        console.log("[Controller] login: " + user);
+        $('#emailstate').attr('class', 'label label-success').html('logined');
+    }
+    // FIXME:: added get slide information
+}
+
 function start() {
-    socket.emit('start');
-    console.log("[Controller] start");
+    socket.emit('start', user);
+    console.log("[Controller] start", user);
 }
 
 function end() {
-    socket.emit('end');
-    console.log("[Controller] end");
+    socket.emit('end', user);
+    console.log("[Controller] end"), user;
 }
 
 function pre() {
-	socket.emit('pre');
-    console.log("[Controller] pre");
+	socket.emit('pre', user);
+    console.log("[Controller] pre", user);
 }
 
 function next() {
-	socket.emit('next');
-    console.log("[Controller] next");
+	socket.emit('next', user);
+    console.log("[Controller] next", user);
 }

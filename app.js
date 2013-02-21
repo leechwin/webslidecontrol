@@ -1,3 +1,6 @@
+var sockets = {};
+var user = '';
+
 var express = require('express'), // web framework
       connect = require( 'connect' ), // Server
       http = require('http'), // Web Server
@@ -19,6 +22,12 @@ app.configure( function(){
 });
 
 app.get( '/webslidecontrol.js', function( req, res) {
+
+  if (typeof req.param("user") !== 'undefined') {
+    user = req.param("user");
+    console.log("[Server] USER: " +  user);
+  }
+
   res.writeHead(200, {'Content-Type': 'application/javascript'});
 
   var socketStraem = fs.createReadStream( './node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.min.js');
@@ -49,6 +58,7 @@ app.get( '/webslidecontrol.js', function( req, res) {
   });
 });
 
+
 // Start server
 io = io.listen( http.createServer( app ).listen( app.get('port'), function() {
   console.log( "Express server listening on port " + app.get( 'port' ) );
@@ -56,6 +66,12 @@ io = io.listen( http.createServer( app ).listen( app.get('port'), function() {
 
 // Start socket.io
 io.sockets.on( 'connection', function( socket ) {
+
+  if (user !== '') {
+    // add client socket
+    sockets[user] = socket.id;
+    console.log('[Server] Added ' + user + " socket.");
+  }
 
   socket.on( 'message', function( data ) {
     console.log('[Server] ' + data);
@@ -67,25 +83,27 @@ io.sockets.on( 'connection', function( socket ) {
 
   socket.on('start', function (data) {
       console.log('[Server] start ' + data);
-      socket.broadcast.emit('start');
+      io.sockets.socket(sockets[data]).emit('start', data);
   });
 
   socket.on('end', function (data) {
       console.log('[Server] end ' + data);
-      socket.broadcast.emit('end');
+      io.sockets.socket(sockets[data]).emit('end', data);
   });
 
   socket.on('pre', function (data) {
       console.log('[Server] pre ' + data);
-      socket.broadcast.emit('pre');
+      io.sockets.socket(sockets[data]).emit('pre', data);
   });
 
   socket.on('next', function (data) {
       console.log('[Server] next ' + data);
-      socket.broadcast.emit('next');
+      io.sockets.socket(sockets[data]).emit('next', data);
+      //socket.broadcast.emit('next');
   });
 
 });
+
 
 /*
 var server = http.createServer(function(req, res) {

@@ -34,6 +34,17 @@
     	<h1>Web Slide Controller</h1><br>
 
         <div>ServerState: <span id='state' class="label label-warning">Loading...</span></div><br>
+        <div>LoginState:  <span id='emailstate' class="label label-important">please login</span></div><br>
+
+        <div class="form-inline">
+          <input type="text" id='email' class="input-small" placeholder="Email">
+          <!-- input type="password" class="input-small" placeholder="Password">
+          <label class="checkbox">
+            <input type="checkbox"> Remember me
+          </label -->
+          <button type="submit" class="btn" onclick='login()'>Login</button>
+        </div>
+        <br>
 
         <div class="btn-group">
           <button class="btn" onclick='pre()'><image src="img/navigation-left.png"/></button>
