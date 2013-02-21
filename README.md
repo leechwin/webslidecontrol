@@ -8,7 +8,7 @@ Control the slide
 
     - Login by email
     
-http://webslidecontrol.herokuapp.com/
+Demo: http://webslidecontrol.herokuapp.com/
 
 
 ### WebSlide
