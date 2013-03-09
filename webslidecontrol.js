@@ -44,6 +44,8 @@ function start() {
             slidePresentation = new SlideManager();
         }
         slidePresentation.toggleSpeakerNotes();
+    } else if (typeof Page !== 'undefined') {
+        $( '#tblcontents' ).click(); // http://tympanus.net/codrops/2012/12/11/fullscreen-pageflip-layout/
     }
 }
 
@@ -60,6 +62,8 @@ function end() {
             slidePresentation = new SlideManager();
         }
         slidePresentation.highlightImportantCode();
+    } else if (typeof Page !== 'undefined') {
+        $( '#tblcontents' ).click();
     }
 }
 
@@ -76,7 +80,10 @@ function pre() {
             slidePresentation = new SlideManager();
         }
         slidePresentation.prev();
+    } else if (typeof Page !== 'undefined') {
+        $( '#bb-nav-prev' ).click();
     }
+
 }
 
 /**
@@ -92,6 +99,8 @@ function next() {
             slidePresentation = new SlideManager();
         }
         slidePresentation.next();
+    } else if (typeof Page !== 'undefined') {
+        $( '#bb-nav-next' ).click();
     }
 }
 
