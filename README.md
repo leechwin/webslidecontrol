@@ -34,3 +34,4 @@ Current support slide framework:
     * reveal.js based slide
     * impress.js based slide
     * slide-presentation.js based slide
+    * http://tympanus.net/codrops/2012/12/11/fullscreen-pageflip-layout/ based slide
