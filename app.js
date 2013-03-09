@@ -58,11 +58,17 @@ app.get( '/webslidecontrol.js', function( req, res) {
   });
 });
 
-
 // Start server
 io = io.listen( http.createServer( app ).listen( app.get('port'), function() {
   console.log( "Express server listening on port " + app.get( 'port' ) );
 } ) );
+
+// assuming io is the Socket.IO server object
+// https://devcenter.heroku.com/articles/using-socket-io-with-node-js-on-heroku
+io.configure(function () {
+  io.set("transports", ["xhr-polling"]); 
+  io.set("polling duration", 10);
+});
 
 // Start socket.io
 io.sockets.on( 'connection', function( socket ) {
