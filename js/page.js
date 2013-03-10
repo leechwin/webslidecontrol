@@ -81,6 +81,7 @@ var Page = (function() {
 		$tblcontents.on( 'click', toggleTOC );
 
 		// click a menu item
+		/* FIXME::
 		$menuItems.on( 'click', function() {
 
 			var $el = $( this ),
@@ -88,12 +89,12 @@ var Page = (function() {
 				jump = function() {
 					bb.jump( idx + 1 );
 				};
-			
 			current !== idx ? closeTOC( jump ) : closeTOC();
 
 			return false;
 			
 		} );
+        */
 
 		// reinit jScrollPane on window resize
 		$( window ).on( 'debouncedresize', function() {
