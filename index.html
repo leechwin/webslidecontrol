@@ -29,6 +29,7 @@
                     <li><a href="#item6">SCM</a></li>
                     <li><a href="#item7">Server-Side</a></li>
                     <li><a href="#item8">Client-Side</a></li>
+                    <li><a href="#item9">Tips</a></li>
                 </ul>
             </div>
 
@@ -280,86 +281,118 @@
                             </div>
                         </div>
                     </div>
-
-<!--
                     <div class="bb-item" id="item7-4">
                         <div class="content">
                             <div class="scroller">
                                 <h2>Server-Side</h2>
-                                <h3>TODO:: Slide Control Page</h3><br>
-                                <h4>- web application framework for node<br>
+                                <h3>Node Server(app.js)</h3><br>
+                                <h4>- Server performed on the node.js<br>
+                                    --<a href="https://devcenter.heroku.com/articles/nodejs">Hosting by heroku</a><br>
+                                    <br>
+                                    - Serve to resource of client request<br>
+                                    -- Web Slide Controller Page<br>
+                                    -- webslidecontrol.js<br>
+                                    <br>
+                                    - WebSocket management<br>
+                                    - Serve to the command transfer to the client from  the controller.<br>
                                 </h4>
                                 <br>
-                                <h3>Why Use express.js?</h3><br>
-                                <img src="images/express.png">
-
-                                3. webslide control 구현기 밑에 tempalte 참고.
-                                4. node.js 호스팅기법
-                                  - heroku 사용방법인
-                                    - procfile 설정
-                                    - heroku repository
-                                  - 서버의 개념
-                                5. 기타
-                                  - node.js 로컬에서 테스트 하는방법
-                                  - 파일변경시에 자동 reload 라이브러리 사용법
                             </div>
                         </div>
                     </div>
+
                     <div class="bb-item" id="item8">
                         <div class="content">
                             <div class="scroller">
                                 <h2>Client-Side</h2>
-                                <h3>Slide Control Page</h3>
-                                1. Bootstrap UX 사용
-                                  - 반응형 웹
-                                2. 로그인관리
-                                  - 필요성(소켓관리:슬라이드 관리를 위한 용도)
-                                  - 사용자 표시가 반드시 필요함
-                                3. client 에서 필요한 자원내려주기(routing)
-                                   - websocket js 내려주기
-                                   - jquery 내려주기
-                                   - webslidecontrol.js
-                                   - 통합 js 합치기
-                                4. 필요한 개선점
+                                <h3><a href="http://webslidecontrol.herokuapp.com/">Web Slide Controller Page</a></h3><br>
+                                <h4>- <a href="http://twitter.github.com/bootstrap/">Used Twitter Bootstrap</a><br>
+                                    - Control the slides of the logged user.<br>
+                                    - User information used for socket management<br>
+                                    - Send slide control command via WebSocket<br>
+                                </h4>
+                                <br>
+                                <img src="images/controller.png" style="height: 70%;">
                             </div>
                         </div>
                     </div>
-
-                    <div class="bb-item" id="item11">
+                    <div class="bb-item" id="item8-1">
                         <div class="content">
                             <div class="scroller">
-                                <h2>Meta Tag Tips</h2>
-                                1. Browser Favicon
-                                2. 북마크 Favicon
-                                3. viewport 란?
-                                3. 더블클릭을 통한 화면 확대 방지
-                                4. appmode 처럼 동작하기 (사파리관)
-                                5. description
-                                6. author
-                                7. Github 리본달
+                                <h2>Client-Side</h2>
+                                <h3><a href="http://webslidecontrol.herokuapp.com/webslidecontrol.js">webslidecontrol.js</a></h3><br>
+                                <h4>- Contained jquery and socket.io<br>
+                                    - Receive slide control command via WebSocket<br>
+                                    - Slide control command has been porting to the each command of slide framework<br>
+                                    - Login using the "user" parameter<br>
+                                </h4>
+                                <br>
+                                <img src="images/porting.png">
                             </div>
                         </div>
                     </div>
 
-
-                    <div class="bb-item" id="item11">
+                    <div class="bb-item" id="item9">
                         <div class="content">
                             <div class="scroller">
-                                <h2>개선포인트</h2>
-                                1. QR 코드 소켓인증
-                                2. 다중 clinet 를 포함한 chat 형식의 slide update (질문응답을 트윗형식제공)
-                                3. 로그인시 슬라이드 리스트를 보여주고 슬라이드를 고르거나 할수 있는도앚ㄱ
-                                3. 현재 슬라이드 위치 보여주기
-                                4. 터치이벤트를 이용한 슬라이드 이동
-                                5. Native 와 연관된 ppt 등의 지원?
+                                <h2>Tips</h2>
+                                
+                                <h3><a href="http://blog.outsider.ne.kr/649">nodemon</a></h3><br>
+
+                                <h3>Heroku Tips</h3><br>
+                                <h4>- <a href="http://niel.delarouviere.com/2012/03/the-really-absolute-beginners-guide-to-host-node-js-on-heroku/">Beginner’s Guide to Host Node.js on Heroku</a><br>
+                                    - <a href="https://devcenter.heroku.com/articles/procfile">Declaring and Scaling Process Types with Procfile</a><br>
+                                    - <a href="http://stackoverflow.com/questions/8415087/how-to-reset-everything-heroku-in-my-git-rails-3-1-project">How to reset everything Heroku in my Git/Rails 3.1 Project</a><br>
+                                    - <a href="http://mudchobo.tistory.com/524">Korean Blog</a><br>
+                                </h4>
+                                <br>
+
+                                <h3><a href="https://github.com/blog/273-github-ribbons">GitHub Ribbons</a></h3><br>
+                                <br>
+
+                                <h3><a href="http://stackoverflow.com/questions/37073/what-is-currently-the-best-way-to-get-a-favicon-to-display-in-all-browsers-that">Browser Favicon</a></h3><br>
+                                <br>
+
+                                <h3>IPhone App Style Tips</h3><br>
+                                <h4>- <a href="http://stackoverflow.com/questions/4389932/how-do-you-disable-viewport-zooming-on-mobile-safari">Disable viewport zooming on mobile safari</a><br>
+                                    - <a href="http://xguru.net/625">WebApp Style in IPhone</a><br>
+                                </h4>
+                                <br>
+
+                                <h3><a href="https://www.google.com/analytics">Google analytics</a></h3><br>
+
                             </div>
                         </div>
                     </div>
 
--->
-
+                    <div class="bb-item" id="item10">
+                        <div class="content">
+                            <div class="scroller">
+                                <h2>Thank you</h2>
+                                <br>
+                                <br>
+                                <img src="images/thankyou.png">
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
+
+<!--
+                    <div class="bb-item" id="item10">
+                        <div class="content">
+                            <div class="scroller">
+                                <h2>Improvements</h2>
+                                <h3>터치이벤트를 이용한 슬라이드 이동</h3><br>
+                                <h3>QR 코드 소켓인증</h3><br>
+                                <h3>다중 clinet 를 포함한 chat 형식의 slide update (질문응답을 트윗형식제공)</h3><br>
+                                <h3>로그인시 자신의 슬라이드 리스트를 보여주고 슬라이드를 고르거나 할수 있는 기능</h3><br>
+                                <h3>현재 슬라이드 위치 보여주기</h3><br>
+                                <h3>Native 와 연관된 ppt 등의 지원?</h3><br>
+                            </div>
+                        </div>
+                    </div>
+-->
 
                 <nav>
                     <span id="bb-nav-prev">&larr;</span>
